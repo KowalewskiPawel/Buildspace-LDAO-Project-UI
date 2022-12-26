@@ -9,7 +9,6 @@ export function Homepage() {
     <PageHome header="Contracts">
       <Contracts />
       <HelpBox />
-      <Statistics />
     </PageHome>
   );
 }
