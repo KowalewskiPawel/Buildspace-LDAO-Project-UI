@@ -19,9 +19,12 @@ export function Contracts(): React.ReactElement | null {
     return (
       <div className="flex flex-col items-center space-y-2 text-sm border dark:text-gray-500 dark:border-gray-700  rounded py-7 px-5">
         <FolderOpenIcon className="w-8 h-8" />
-        <div>You haven&apos;t uploaded any contracts yet on this browser.</div>
-        <Link to={`/instantiate`} className="text-green-500">
-          Upload a new contract
+        <div>It looks like you dont have any DAO yet, click below to create one</div>
+        <Link
+          to={`/instantiate/0x1bc3be402eefd338b14ad210b889db64cb9e0b35bed6815779c080cf8904aa9b`}
+          className="text-green-500"
+        >
+          Create new DAO
         </Link>
       </div>
     );

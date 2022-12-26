@@ -29,7 +29,7 @@ export function MobileMenu() {
           <MenuIcon className="w-7 h-7 mx-auto text-gray-300" />
         </button>
         <div className="flex flex-1 justify-center items-center">
-          <h1 className="font-medium text-lg">Contracts UI</h1>
+          <h1 className="font-medium text-lg">Liberum DAO UI</h1>
         </div>
         <button
           className="flex-none text-center w-8 h-8 border border-gray-700 rounded"

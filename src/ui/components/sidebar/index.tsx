@@ -17,9 +17,9 @@ export function Sidebar() {
               <NetworkAndUser />
               <Navigation />
               <QuickLinks />
+              <Footer />
             </nav>
           </div>
-          <Footer />
         </div>
       </div>
       <MobileMenu />

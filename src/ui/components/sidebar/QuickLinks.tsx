@@ -14,7 +14,7 @@ export function QuickLinks() {
   return (
     <div className="quick-links">
       <div className="section your-contracts">
-        <div className="header text-gray-400">Your Contracts</div>
+        <div className="header text-gray-400">Your DAOs</div>
         {contracts && contracts.length > 0 ? (
           contracts.map(({ name, address }) => {
             return (
@@ -28,7 +28,7 @@ export function QuickLinks() {
             None yet&nbsp;
             {' • '}&nbsp;
             <Link className="text-blue-400" to={`/instantiate`}>
-              Upload one
+              Create one
             </Link>
           </div>
         )}

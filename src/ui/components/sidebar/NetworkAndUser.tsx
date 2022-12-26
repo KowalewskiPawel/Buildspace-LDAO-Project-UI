@@ -9,24 +9,8 @@ import { classes } from 'helpers';
 
 const options = [
   {
-    label: 'Contracts (Rococo)',
-    value: RPC.CONTRACTS,
-  },
-  {
-    label: 'Shibuya',
-    value: RPC.SHIBUYA,
-  },
-  {
-    label: 'Shiden',
-    value: RPC.SHIDEN,
-  },
-  {
     label: 'Aleph Zero Testnet',
     value: RPC.ALEPHZEROTESTNET,
-  },
-  {
-    label: 'Local Node',
-    value: RPC.LOCAL,
   },
 ];
 

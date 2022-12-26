@@ -96,7 +96,7 @@ export function Step3() {
           onClick={() => call()}
           data-cy="submit-btn"
         >
-          Upload and Instantiate
+          Instantiate new DAO
         </Button>
 
         <Button
