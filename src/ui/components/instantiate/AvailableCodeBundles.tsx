@@ -9,7 +9,6 @@ import { CodeBundleDocument } from 'types';
 import { useApi, useDatabase } from 'ui/contexts';
 import { filterOnChainCode } from 'helpers';
 import { useDbQuery } from 'ui/hooks';
-import codeBundle from './code.json';
 
 const PAGE_SIZE = 5;
 
@@ -58,15 +57,10 @@ export function AvailableCodeBundles() {
   const [codes, setCodes] = useState<CodeBundleDocument[]>([]);
 
   useEffect(() => {
-    // data &&
-    //   filterOnChainCode(api, data)
-    //     .then(codes => setCodes(codes))
-    //     .catch(console.error);
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    /* @ts-ignore */
-    filterOnChainCode(api, codeBundle)
-      .then(codes => setCodes(codes))
-      .catch(console.error);
+    data &&
+      filterOnChainCode(api, data)
+        .then(codes => setCodes(codes))
+        .catch(console.error);
   }, [api, data]);
 
   if (isLoading) {

@@ -2,7 +2,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
 import { Outlet } from 'react-router';
-import { NoticeBanner } from './common/NoticeBanner';
 import { Sidebar, AwaitApis } from 'ui/components';
 import {
   ApiContextProvider,
@@ -21,7 +20,6 @@ const App = (): JSX.Element => {
               <Sidebar />
               <AwaitApis>
                 <Outlet />
-                <NoticeBanner />
               </AwaitApis>
             </div>
           </TransactionsContextProvider>
