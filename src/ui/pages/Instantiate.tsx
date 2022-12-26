@@ -1,13 +1,10 @@
 // Copyright 2022 @paritytech/contracts-ui authors & contributors
 // SPDX-License-Identifier: GPL-3.0-only
 
-import { useParams } from 'react-router-dom';
 import { InstantiateContextProvider } from 'ui/contexts';
 import { Wizard } from 'ui/components/instantiate';
 
 export function Instantiate() {
-  const { codeHash: codeHashUrlParam } = useParams<{ codeHash: string }>();
-
   return (
     <div className="w-full overflow-y-auto overflow-x-hidden px-5 py-3 m-2">
       <div className="grid md:grid-cols-12 gap-5">

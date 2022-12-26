@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
 import { useEffect } from 'react';
-import { Contracts, HelpBox, Statistics } from '../components/homepage';
+import { Contracts, Statistics } from '../components/homepage';
 import codeBundle from '../components/instantiate/code.json';
 import { PageHome } from 'ui/templates';
 import { useDatabase } from 'ui/contexts';
